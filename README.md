@@ -53,9 +53,10 @@ This was taken from the source1.
 Modification 01:
 Reciever.java was taken from source1 and modified according to our requiremts . 
 Changes are made in the following lines: 
-Line no75 toLine no 77 : Modification made to adopt three paralell operations (Movement, Input from controller, Sensing) 
 
-Line no 101 t0 Line no 104: Functionalities to move the robot forward and stop condition was added using touch function. 
+Line no 75 to Line no 77 :These modification was made to adopt three paralell operations (Movement, Input from controller and Sensing) 
+
+Line no 101 to Line no 104: Functionalities to move the robot forward and stop condition was added using touch function. 
 
 Line no 119 to Line no 121:  Functionalities to move the robot left and stop condition was added using touch function. 
 
