@@ -41,15 +41,17 @@ Developer Instructions:
 
 GitHub link for the: https://github.com/sivasankarreddyy/Group_3
 
-Class files in Lejos Project There are a total of 5 .java class files. a. Movement.java
+Class files in Lejos Project There are a total of 5 .java class files. 
+
+a. Movement.java (Author Sankar Reddy - group3)
 
 b. Receiver.java (Taken from source1 and modified according to Modification01)
 
-c. ObstacleDetector.java
+c. ObstacleDetector.java (Author Sankar Reddy - group3)
 
-d. DataExchange.java
+d. DataExchange.java (Author Sankar Reddy - group3)
 
-e. DataReciever.java
+e. DataReciever.java (Author Sankar Reddy - group3)
 
 Class files in PCController Project There will be a file called NXTRemoteControl_TA.java This was taken from the source1.
 
