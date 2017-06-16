@@ -1,6 +1,7 @@
 package org.sankar;
 import lejos.nxt.*;
 
+//This triggers the main programme. It triggers the main thread(Receiver)
 public class Movement {
 	private static DataExchange DE;
 	private static ObstacleDetector OD;
