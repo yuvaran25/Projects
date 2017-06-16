@@ -26,6 +26,7 @@ Check the console and note down the Bluetooth serial number which starts with Te
 Open the PCController project in eclipse> src> org.sankar> NXTremoteControl_TA.java> line number 221 and enter your bluetooth serial number in "btspp://"
 Rightclick on NXTremoteControl_TA.java and run as > Java Application. This will open the control panel to control the robot.
 Click connect on the control panel. Check your console for the message "NXT is connected."
+
 Developer Instructions:
 
 GitHub link for the: https://github.com/sivasankarreddyy/Group_3
@@ -53,7 +54,6 @@ Line no 119 to Line no 121: Functionalities to move the robot left and stop cond
 Line no 133 to Line no 135: Functionalities to move the robot right and stop condition was added using touch function.
 
 Sources: [1]. https://lejos.sourceforge.io/forum/viewtopic.php?t=1723
-
 
 
 
