@@ -15,16 +15,26 @@ Requirements 3 and seven doesn't work on the 64-bit counterparts.
 Instructions to Install:
 
 Install Eclipse and JDK 8 32 Bit version.
+
 Install LeJOS NXJ in windows and then install LeJOS NXJ plugin for eclipse. (Note down the path of installation dir)
 Extract the <Telep.zip> file on your desktop and Import both the projects (PCController and Lejos) in the file to your eclipse environment.
+
 Go to Window->Preferences->LeJOSNXJ and set the path of installation dir as noted down in step 2.
+
 Click on the leJOS NXJ menu in the Eclipse and select "Upload firmware".
+
 Connect the Programmable brick through USB cable with your computer.
+
 Click on the "Flash leJOS Firmware" and flash the firmware. This uploads the firmware into the Lego Programmable brick.
+
 Open the Lejos project in eclipse. Go to src>org.sankar>Rightclick on Movement.java> run as "LeJOS NXT program". (This compiles the Java source code and uploads the bytecode to programmable brick.)
+
 Check the console and note down the Bluetooth serial number which starts with Tele P Bot 00...
+
 Open the PCController project in eclipse> src> org.sankar> NXTremoteControl_TA.java> line number 221 and enter your bluetooth serial number in "btspp://"
+
 Rightclick on NXTremoteControl_TA.java and run as > Java Application. This will open the control panel to control the robot.
+
 Click connect on the control panel. Check your console for the message "NXT is connected."
 
 Developer Instructions:
