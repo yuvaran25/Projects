@@ -78,7 +78,7 @@ public class Receiver extends Thread
 		else{};
 		return command;
 
-	}//End checkCommand
+	}
 
 	public static void move(boolean[]D, int S)
 	{ 
@@ -96,8 +96,7 @@ public class Receiver extends Thread
 		Motor.C.setSpeed(movingSpeed);
 		
 		if(direction[0] == true)
-		{			
-			//if((DataExchange.distance > tableEdge) || (DataExchange.distance < objectDetect)){			
+		{								
 			if(!touch.isPressed() || DE.distance < 25){					
 				Motor.A.stop();
 				Motor.C.stop();
@@ -185,7 +184,7 @@ public class Receiver extends Thread
 			Motor.C.stop();
 		}
 
-	}//End move
+	}
 
 	public static void connect()
 	{  
@@ -198,7 +197,7 @@ public class Receiver extends Thread
 		//dataIn = USBLink.openDataInputStream();
 		DE.setDataIn(dataIn);
 
-	}//End connect
+	}
 
 	public static int getSpeed(boolean[] D) throws InterruptedException
 	{
@@ -221,6 +220,6 @@ public class Receiver extends Thread
 		}
 
 		return speed;
-	}//End getSpeed
+	}
 
 }
