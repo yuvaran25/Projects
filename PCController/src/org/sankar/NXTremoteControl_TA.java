@@ -98,12 +98,10 @@ public class NXTremoteControl_TA extends JFrame
      NXTremoteControl_TA NXTrc = new NXTremoteControl_TA();
      NXTrc.setVisible(true);
      NXTrc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-  }//End main
+  }
   
   private static class ButtonHandler implements ActionListener, MouseListener, KeyListener
   {
-//***********************************************************************
-  //Buttons action
     public void actionPerformed(ActionEvent ae)
     {
       if(ae.getSource() == quit)  {System.exit(0);}
@@ -117,16 +115,13 @@ public class NXTremoteControl_TA extends JFrame
       try{
          if(ae.getSource() == speedUp) {outData.writeInt(6);}
          if(ae.getSource() == slowDown) {outData.writeInt(7);}
-         outData.flush(); //This forces any buffered output bytes to be written out to the stream. 
+         outData.flush(); 
         } 
          catch (IOException ioe) {
         System.out.println("\nIO Exception writeInt");
          }
       
-     }//End ActionEvent(for buttons)
-
-//***********************************************************************
-//Mouse actions
+     }
     public void mouseClicked(MouseEvent arg0) {}
 
    public void mouseEntered(MouseEvent arg0) {}
@@ -149,7 +144,7 @@ public class NXTremoteControl_TA extends JFrame
             System.out.println("\nIO Exception writeInt");
          }
         
-   }//End mousePressed
+   }
 
    public void mouseReleased(MouseEvent moe) 
    {
@@ -168,11 +163,8 @@ public class NXTremoteControl_TA extends JFrame
            System.out.println("\nIO Exception writeInt");
         }
       
-   }//End mouseReleased
-
-//***********************************************************************
-//Keyboard action
-   public void keyPressed(KeyEvent ke) {}//End keyPressed
+   }
+   public void keyPressed(KeyEvent ke) {}
 
    public void keyTyped(KeyEvent ke) 
    {
@@ -190,7 +182,7 @@ public class NXTremoteControl_TA extends JFrame
          System.out.println("\nIO Exception writeInt");
          }
         
-   }//End keyTyped
+   }
    
    public void keyReleased(KeyEvent ke) 
    {
@@ -209,9 +201,9 @@ public class NXTremoteControl_TA extends JFrame
         catch (IOException ioe) {
            System.out.println("\nIO Exception writeInt");
         }
-   }//End keyReleased
+   }
 
-  }//End ButtonHandler
+  }
   
   public static void connect() throws IOException
   {
@@ -226,7 +218,7 @@ public class NXTremoteControl_TA extends JFrame
      System.out.println(outData);
      System.out.println("\nNXT is Connected");   
      
-  }//End connect
+  }
   
   public static void disconnect()
   {
@@ -239,5 +231,5 @@ public class NXTremoteControl_TA extends JFrame
      }
      System.out.println("\nClosed data streams");
      
-  }//End disconnect
-}//End ControlWindow class
+  }
+}
