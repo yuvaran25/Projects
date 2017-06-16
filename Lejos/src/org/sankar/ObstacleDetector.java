@@ -16,6 +16,7 @@ public class ObstacleDetector extends Thread {
 		this.DE = DE;		
 	}
 
+	//this method measures the distance by using ultrasonic sensor continuously and update the distance attribute of DataExchange object.
 	public void run(){	
 		us = new UltrasonicSensor(SensorPort.S4);
 		touch = new TouchSensor(SensorPort.S2);
@@ -25,24 +26,11 @@ public class ObstacleDetector extends Thread {
 				System.out.println("inside stop");
 				transmitReceived = 8;
 				try {
-					DE.setcmd(transmitReceived);					
-					//transmitReceived = DE.dataIn.readInt();
-					//DE.setcmd(transmitReceived);
-					//DE.setcmd(DE.transmitReceived);					
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
+					DE.setcmd(transmitReceived);														
+				} catch (IOException e) {					
 					System.out.println("in Obstacle");
 				}		
-			}
-			/*else{
-				try {
-					//transmitReceived = DE.dataIn.readInt();
-					//DE.setcmd(transmitReceived);
-					DE.setcmd(DE.transmitReceived);
-				} catch (IOException e) {
-					// TODO Auto-generated catch block					
-				}				
-			}*/
+			}			
 		}
 	}
 }
