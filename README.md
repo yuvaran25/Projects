@@ -35,15 +35,16 @@ GitHub link for the : https://github.com/sivasankarreddyy/Group_3
 
 Class files in Lejos Project
 There are a total of 5 .java class files. 
-a. Movement.java
 
-b. Receiver.java (Taken from source1 and modified according to Modification01)
+a) Movement.java
 
-c. ObstacleDetector.java
+b) Receiver.java (Taken from source1 and modified according to Modification01)
 
-d. DataExchange.java
+c) ObstacleDetector.java
 
-e. DataReciever.java
+d) DataExchange.java
+
+e) DataReciever.java
 
 Class files in PCController Project
 There will be a file called NXTRemoteControl_TA.java 
@@ -56,11 +57,11 @@ Changes are made in the following lines:
 
 Line no 75 to Line no 77 :These modification was made to adopt three paralell operations (Movement, Input from controller and Sensing) 
 
-Line no 101 to Line no 104: Functionalities to move the robot forward and stop condition was added using touch function. 
+Line no 101 to Line no 104: Functionalities to move the robot forward and stop condition was added using "touch" object. 
 
-Line no 119 to Line no 121:  Functionalities to move the robot left and stop condition was added using touch function. 
+Line no 119 to Line no 121:  Functionalities to move the robot left and stop condition was added using "touch" object. 
 
-Line no 133 to Line no 135: Functionalities to move the robot right and stop condition was added using touch function. 
+Line no 133 to Line no 135: Functionalities to move the robot right and stop condition was added using "touch" object. 
 
 
 
