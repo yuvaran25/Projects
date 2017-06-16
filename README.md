@@ -34,11 +34,15 @@ Developer Instructions:
 GitHub link for the : https://github.com/sivasankarreddyy/Group_3
 
 Class files in Lejos Project
-THere are a total of 5 .java class files. 
+There are a total of 5 .java class files. 
 a. Movement.java
+
 b. Receiver.java (Taken from source1 and modified according to Modification01)
+
 c. ObstacleDetector.java
+
 d. DataExchange.java
+
 e. DataReciever.java
 
 Class files in PCController Project
@@ -47,7 +51,7 @@ This was taken from the source1.
 
 
 Modification 01:
-Reciever.java was taken from <source1> and modified according to our requiremts . 
+Reciever.java was taken from source1 and modified according to our requiremts . 
 Changes are made in the following lines: 
 Line no75 toLine no 77 : Modification made to adopt three paralell operations (Movement, Input from controller, Sensing) 
 
